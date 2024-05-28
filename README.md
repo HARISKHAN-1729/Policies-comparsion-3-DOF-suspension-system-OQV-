@@ -147,4 +147,52 @@ This repository hosts a detailed simulation of an active suspension system desig
    - x4 = ˙Zus: The vertical velocity of the unsprung mass, which affects how quickly the unsprung mass responds to road surface changes. Controlling this velocity helps in optimizing the interaction between the 
      tire and road, crucial for effective shock absorption and minimizing transmission of road noise and vibrations.
 
+# **Results**
+   <p align="center">
+    <img src="images/simulation_plots.png"" width="600"/>
+    </p>
 
+1. Sprung Mass Velocity
+   
+  Description: This plot shows the velocity of the sprung mass over time. The sprung mass typically represents the vehicle body supported by the suspension.
+  
+  Red Line (PID): Shows fluctuations that suggest more frequent adjustments or corrections by the PID controller in response to road irregularities, leading to a somewhat less smooth velocity profile.
+  
+  Blue Line (LQR): Demonstrates a smoother response compared to PID, indicative of the LQR controller's ability to optimize control actions based on a predefined cost function that likely balances performance and 
+  control effort.
+  
+2. Wheel Vertical Velocity
+     
+  Description: This graph displays the vertical velocity of the wheel, which directly impacts ride comfort and handling by affecting how the wheel interacts with the road surface.
+  
+  Red Line (PID): Exhibits sharp spikes, reflecting rapid changes in wheel velocity which could correspond to sudden impacts or bumps in the road.
+  
+  Blue Line (LQR): Similar to the PID, but potentially with slight damping effects that smoothen the response, indicating effective control over the unsprung mass dynamics.
+  
+3. Acceleration
+     
+  Description: Shows the acceleration experienced by the vehicle's sprung mass, a critical factor for assessing ride comfort.
+  
+  Red Line (PID): Displays significant peaks, especially at around 1 second and 2.5 seconds, suggesting strong responses to road bumps or other disturbances.
+  
+  Blue Line (LQR): While also showing peaks, the LQR line appears to smooth out more quickly than PID, potentially offering a more comfortable ride by minimizing high magnitude accelerations.
+  
+4. Wheel’s Deflection
+   
+  Description: This plot measures the deflection of the wheel relative to the vehicle body, which is important for maintaining good tire-road contact.
+
+  Red Line (PID) and Blue Line (LQR): Both lines track closely together, showing similar patterns of deflection. This indicates that both controllers are maintaining comparable wheel positioning, which is crucial 
+  for effective shock absorption and overall stability.
+  
+-5. Spring Travel
+
+  Description: Represents the travel of the suspension spring, which is directly related to how well the suspension can absorb road shocks and maintain vehicle stability.
+  
+  Red Line (PID): The PID controller shows more variability in spring travel, which can be interpreted as a more reactive or less consistent damping strategy.
+  
+  Blue Line (LQR): Exhibits smoother transitions and less extreme changes in spring travel, suggesting better overall control of suspension movement and potentially enhanced ride quality.
+  
+**Analysis Summary:**
+  These graphs collectively demonstrate the dynamic behavior of the vehicle's suspension system as controlled by PID and LQR strategies under simulated conditions. The LQR controller generally shows smoother   responses and potentially better performance in terms of ride comfort and handling stability compared to the PID controller. This could be attributed to the LQR's approach to minimizing a cost function that likely includes terms for control effort and deviation from desired states, thus achieving a more balanced and optimized response.
+  
+  Both controllers are effective, but the choice between them may depend on specific performance criteria, such as the priority between ride comfort (where LQR may excel) and responsiveness (where PID may provide sharper control).
