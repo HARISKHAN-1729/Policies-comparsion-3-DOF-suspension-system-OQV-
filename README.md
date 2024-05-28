@@ -246,6 +246,17 @@ python plot.py
 
 Ensure that plot.py is properly configured to display or save the necessary plots.
 
+FOR MPC
+
+```bash
+python simulation.py
+```
+
+```bash
+python plot_results.py
+```
+
+
 **Deactivating the Virtual Environment**
 
 After you are finished, you can deactivate the virtual environment by running:
