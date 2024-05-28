@@ -206,9 +206,71 @@ Ensure you have Python installed on your system. It's recommended to use Python 
 **Cloning the Repository**
 
  First, clone the repository to your local machine by running:
+ 
  ``` bash
-     git clone https://github.com/your-username/your-repository-name.git
-     cd your-repository-name
+ [git clone https://github.com/your-username/your-repository-name.git](https://github.com/HARISKHAN-1729/Policies-comparsion-3-DOF-suspension-system-OQV-.git)
+ cd your-repository-name
+ ```
+
+**Setting Up a Virtual Environment**
+ 
+ It's recommended to use a virtual environment to isolate package dependencies. To set up and activate a virtual environment:
+
+** Windows:**
+
+``` bash
+py -m venv env
+env\Scripts\activate
 ```
 
-Replace https://github.com/your-username/your-repository-name.git with the actual URL of your repository.
+**macOS and Linux:**
+
+```bash
+python3 -m venv env
+source env/bin/activate
+```
+
+**Installing Dependencies**
+  
+  Install all the required packages by running:
+
+``` bash
+pip install -r requirements.txt
+```
+This command installs all the dependencies defined in your requirements.txt file.
+
+**Running the Project**
+
+To execute the main program, use the following command:
+
+``` bash 
+python main.py
+```
+
+This will run the main.py script, which should be the entry point of your project.
+
+**Generating Plots**
+
+If your project includes visualizations, generate plots by executing:
+
+``` bash
+python plot.py
+```
+
+Ensure that plot.py is properly configured to display or save the necessary plots.
+
+**Deactivating the Virtual Environment**
+
+After you are finished, you can deactivate the virtual environment by running:
+
+``` bash
+
+deactivate
+```
+
+This command will return your terminal to the system's default Python interpreter.
+
+Conclusion
+
+These instructions provide a complete guide to setting up and running the project. By following these steps, users can ensure they are working in a controlled and consistent development environment.
+
