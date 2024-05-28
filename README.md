@@ -1,4 +1,5 @@
-# Comparsion of the performance of active suspension system for a OQV, when subjected to different road conditions
+# Comparative analysis of PID, LQR and MPC for active suspension system with 3-DOF
+
 
 ---
 
