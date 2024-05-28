@@ -159,6 +159,10 @@ Preventive Maintenance: By dynamically adjusting the suspension settings, the sy
   Red Line (PID): The PID controller shows more variability in spring travel, which can be interpreted as a more reactive or less consistent damping strategy.
   
   Blue Line (LQR): Exhibits smoother transitions and less extreme changes in spring travel, suggesting better overall control of suspension movement and potentially enhanced ride quality.
+
+   <p align="center">
+    <img src="MPC.png"" width="600"/>
+    </p>
   
 **Analysis Summary:**
   These graphs collectively demonstrate the dynamic behavior of the vehicle's suspension system as controlled by PID and LQR strategies under simulated conditions. The LQR controller generally shows smoother   responses and potentially better performance in terms of ride comfort and handling stability compared to the PID controller. This could be attributed to the LQR's approach to minimizing a cost function that likely includes terms for control effort and deviation from desired states, thus achieving a more balanced and optimized response.
