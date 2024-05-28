@@ -196,3 +196,19 @@ This repository hosts a detailed simulation of an active suspension system desig
   These graphs collectively demonstrate the dynamic behavior of the vehicle's suspension system as controlled by PID and LQR strategies under simulated conditions. The LQR controller generally shows smoother   responses and potentially better performance in terms of ride comfort and handling stability compared to the PID controller. This could be attributed to the LQR's approach to minimizing a cost function that likely includes terms for control effort and deviation from desired states, thus achieving a more balanced and optimized response.
   
   Both controllers are effective, but the choice between them may depend on specific performance criteria, such as the priority between ride comfort (where LQR may excel) and responsiveness (where PID may provide sharper control).
+
+# **Installation and Usage:**
+
+**Prerequisites**
+
+Ensure you have Python installed on your system. It's recommended to use Python 3.6 or newer. Download Python from python.org.
+
+**Cloning the Repository**
+
+ First, clone the repository to your local machine by running:
+ ``` bash
+     git clone https://github.com/your-username/your-repository-name.git
+     cd your-repository-name
+```
+
+Replace https://github.com/your-username/your-repository-name.git with the actual URL of your repository.
