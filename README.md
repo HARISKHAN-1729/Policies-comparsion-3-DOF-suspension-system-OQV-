@@ -268,6 +268,41 @@ deactivate
 
 This command will return your terminal to the system's default Python interpreter.
 
+# **Project Structure**
+
+- **Output:**
+    Contains simulation output files.
+
+- **images:**
+    Stores images used in the documentation or results.
+
+- **MPC_PLOTS.py:**
+    Script for generating plots related to the MPC results.
+
+- **cost.py:**
+    Defines cost functions used in the simulations.
+
+- **main.py:**
+    Main script to run the overall project.
+
+- **mpc_control.py:**
+    Contains the MPC setup and control logic.
+
+- **plot.py:**
+    Script for generating plots for PID and LQR results.
+
+- **policies.py:**
+    Defines different control policies (PID, LQR).
+
+- **requirements.txt:**
+    List of dependencies.
+
+- **simulation.py:**
+    Runs the simulation using the MPC controller.
+
+- **system_model_MPC.py:**
+    Defines the system model and discretization for the MPC.
+
 Conclusion
 
 These instructions provide a complete guide to setting up and running the project. By following these steps, users can ensure they are working in a controlled and consistent development environment.
