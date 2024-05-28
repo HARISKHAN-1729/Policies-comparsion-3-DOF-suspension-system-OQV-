@@ -120,14 +120,29 @@ This repository hosts a detailed simulation of an active suspension system desig
 1. **Equation for the Sprung Mass (\(m_s\))**:
 
    <p align="center">
-   <img src="images/equa1.png" " width="600"/>
+   <img src="images/equation1.png" " width="600"/>
    </p>
    
 2. **Equation for the Unsprung Mass (\(m_{us}\))**:
 
     <p align="center">
-    <img src="images/equ2.png"" width="600"/>
+    <img src="images/equation2.png"" width="600"/>
     </p>
 
 
+ ### States
 
+   The state variables used for modeling and controlling the active suspension system based on a quarter-car model. These state variables, essential for the implementation of both PID and LQR controllers, are 
+   outlined as follows:
+
+   - x1 = Zs − Zus: This represents the suspension travel, which is the relative displacement between the sprung mass and the unsprung mass. It is a critical parameter for assessing and controlling the overall 
+     suspension behavior, especially in terms of how well the suspension can absorb road irregularities and maintain vehicle stability.
+
+   - x2 = Żs: This is the velocity of the sprung mass. Controlling this state variable is important for minimizing the oscillations of the vehicle's body, thereby improving ride comfort by reducing the impact of 
+     bumps and other road surface imperfections.
+
+   - x3 = Zus − Zr: Known as the wheel’s deflection, it measures the relative displacement between the unsprung mass and the road profile. This state is crucial for maintaining proper wheel-road contact, which is 
+     fundamental for vehicle safety and handling.
+
+   - x4 = ˙Zus: The vertical velocity of the unsprung mass, which affects how quickly the unsprung mass responds to road surface changes. Controlling this velocity helps in optimizing the interaction between the 
+     tire and road, crucial for effective shock absorption and minimizing transmission of road noise and vibrations.
