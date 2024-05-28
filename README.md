@@ -88,3 +88,42 @@ This repository hosts a detailed simulation of an active suspension system desig
 
 # **System Dynamics:**
 
+  <p align="center">
+  <img src="images/system.png" alt="Active Suspension System" width="600"/>
+  </p>
+
+  **System Description:**
+  
+  **The quarter-car model includes:**
+  
+  - **Sprung mass (ms):** Represents the weight of the vehicle body.
+  
+  - **Unsprung mass (mus):** Represents the weight of the wheels and other components not supported by the springs.
+  
+  - **Suspension stiffness (ks):**  The stiffness of the springs supporting the sprung mass.
+  
+  - **Tire stiffness (kus):** The stiffness of the tires, which act as additional springs.
+  
+  - **Suspension damping (bs):** Damping component that controls the energy dissipation in the suspension system.
+  
+  - **Tire damping (bus):** Damping component associated with the tires.
+  
+  - **Road input (Zr):** Represents the vertical displacement due to road irregularities.
+
+# **Differential Equations:**
+
+ The dynamic behavior of this system is described by two differential equations that model the forces acting on both the sprung and unsprung masses. These equations 
+ account for the spring and damping forces, as well as the control force exerted by the active suspension system (Fa).
+
+### Dynamics Equations
+
+1. **Equation for the Sprung Mass (\(m_s\))**:
+
+   ![Equation 1]([https://latex.codecogs.com/png.latex?m_s%20%5Cddot%7BZ%7D_s%20%3D%20-k_s%20%28Z_s%20-%20Z_%7Bus%7D%29%20-%20b_s%20%28%5Cdot%7BZ%7D_s%20-%20%5Cdot%7BZ%7D_%7Bus%7D%29%20%2B%20F_a](https://latex.codecogs.com/png.image?\dpi{110}&space;m_s\ddot{Z}_s=-k_s(Z_s-Z_{us})-b_s(\dot{Z}_s-\dot{Z}_{us})&plus;F_a&space;))
+
+2. **Equation for the Unsprung Mass (\(m_{us}\))**:
+
+   ![Equation 2](https://latex.codecogs.com/png.latex?m_%7Bus%7D%20%5Cddot%7BZ%7D_%7Bus%7D%20%3D%20k_s%20%28Z_s%20-%20Z_%7Bus%7D%29%20%2B%20b_s%20%28%5Cdot%7BZ%7D_s%20-%20%5Cdot%7BZ%7D_%7Bus%7D%29%20-%20k_%7Bus%7D%20%28Z_%7Bus%7D%20-%20Z_r%29%20-%20b_%7Bus%7D%20%5Cdot%7BZ%7D_%7Bus%7D%20-%20F_a)
+
+
+
