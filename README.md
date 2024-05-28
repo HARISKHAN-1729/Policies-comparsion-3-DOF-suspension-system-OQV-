@@ -6,7 +6,7 @@
 
 - [Overview](#overview)
 - [Problem Statement](#problem-statement)
-- [Methodology](#methodology)
+- [System dynamics](#dynamics)
 - [Results](#results)
 - [Installation and Usage](#installation-and-usage)
 - [Project Structure](#project-structure)
