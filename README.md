@@ -116,6 +116,7 @@ Preventive Maintenance: By dynamically adjusting the suspension settings, the sy
      tire and road, crucial for effective shock absorption and minimizing transmission of road noise and vibrations.
 
 # **Results**
+**PID AND LQR**
    <p align="center">
     <img src="images/simulation_plots.png"" width="600"/>
     </p>
@@ -160,12 +161,26 @@ Preventive Maintenance: By dynamically adjusting the suspension settings, the sy
   
   Blue Line (LQR): Exhibits smoother transitions and less extreme changes in spring travel, suggesting better overall control of suspension movement and potentially enhanced ride quality.
 
+"MPC"
    <p align="center">
-    <img src="MPC.png"" width="600"/>
+    <img src="images/MPC.png"" width="600"/>
     </p>
-  
+
+  1. Suspension Travel Over Time:
+This plot shows the vertical movement of the sprung mass of the suspension. Initially, there is a noticeable spike, indicating a reaction to an external disturbance or initial condition. The travel quickly stabilizes, demonstrating the effectiveness of the MPC in minimizing oscillations and ensuring a smooth ride.
+
+2. Sprung Mass Velocity Over Time:
+This plot tracks the velocity of the sprung mass, reflecting how fast it moves vertically. It begins with significant motion, which quickly reduces to minimal levels. The rapid stabilization of the velocity suggests efficient damping by the MPC, which helps in avoiding excessive bouncing and maintaining ride comfort.
+
+3. Wheel Deflection Over Time:
+The plot displays the deflection of the wheel, an indicator of how well the suspension maintains wheel contact with the road. There is a sharp initial deflection that stabilizes shortly thereafter, illustrating the controller’s ability to quickly adapt to road conditions, thus maintaining stability and handling.
+
+4. Unsprung Mass Velocity Over Time:
+This plot depicts the velocity of the unsprung mass, such as the wheels and axle, as they react to road surfaces. The velocity shows a sharp change initially and then levels off, indicating that the MPC effectively controls the unsprung mass to absorb impacts from the road, enhancing both comfort and tire life.
+
+
 **Analysis Summary:**
-  These graphs collectively demonstrate the dynamic behavior of the vehicle's suspension system as controlled by PID and LQR strategies under simulated conditions. The LQR controller generally shows smoother   responses and potentially better performance in terms of ride comfort and handling stability compared to the PID controller. This could be attributed to the LQR's approach to minimizing a cost function that likely includes terms for control effort and deviation from desired states, thus achieving a more balanced and optimized response.
+  These graphs collectively demonstrate the dynamic behavior of the vehicle's suspension system as controlled by PID and LQR strategies under simulated conditions. The LQR controller generally shows smoother responses and potentially better performance in terms of ride comfort and handling stability compared to the PID controller. This could be attributed to the LQR's approach to minimizing a cost function that likely includes terms for control effort and deviation from desired states, thus achieving a more balanced and optimized response.
   
   Both controllers are effective, but the choice between them may depend on specific performance criteria, such as the priority between ride comfort (where LQR may excel) and responsiveness (where PID may provide sharper control).
 
