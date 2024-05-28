@@ -146,3 +146,5 @@ This repository hosts a detailed simulation of an active suspension system desig
 
    - x4 = ˙Zus: The vertical velocity of the unsprung mass, which affects how quickly the unsprung mass responds to road surface changes. Controlling this velocity helps in optimizing the interaction between the 
      tire and road, crucial for effective shock absorption and minimizing transmission of road noise and vibrations.
+
+
