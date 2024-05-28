@@ -10,7 +10,6 @@
 - [Results](#results)
 - [Installation and Usage](#installation-and-usage)
 - [Project Structure](#project-structure)
-- [Bibliography](#bibliography)
 
 ---
 
